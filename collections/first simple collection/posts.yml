@@ -8,6 +8,20 @@ http:
   url: https://jsonplaceholder.typicode.com/posts
   auth: inherit
 
+runtime:
+  scripts:
+    - type: after-response
+      code: |-
+        test("Status code is 200", function() {
+            expect(res.getStatus()).to.equal(200);
+          });
+          
+          test("Response has correct fields", function() {
+            const data = res.getBody();
+            expect(data).to.have.property('title');
+            expect(data.userId).to.be.a('number');
+          });
+
 settings:
   encodeUrl: true
   timeout: 0
