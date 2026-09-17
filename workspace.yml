@@ -1,0 +1,14 @@
+opencollection: 1.0.0
+info:
+  name: "git-bruno"
+  type: workspace
+
+collections:
+  - name: "first simple collection"
+    path: "collections/first simple collection"
+  - name: "second simple collection"
+    path: "collections/second simple collection"
+
+specs:
+
+docs: ''
