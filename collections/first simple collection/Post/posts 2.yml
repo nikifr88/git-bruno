@@ -15,7 +15,7 @@ runtime:
         test("Status code is 200", function() {
             expect(res.getStatus()).to.equal(200);
           });
-          
+          //Коммент
           test("Response has correct fields", function() {
             const data = res.getBody();
             expect(data).to.have.property('title');
