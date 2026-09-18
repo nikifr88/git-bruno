@@ -20,6 +20,7 @@ runtime:
             const data = res.getBody();
             expect(data).to.have.property('title');
             expect(data.userId).to.be.a('number');
+            expect(data.userId).to.be.a('number');
           });
 
 settings:
