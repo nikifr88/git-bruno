@@ -6,6 +6,9 @@ info:
 http:
   method: GET
   url: https://jsonplaceholder.typicode.com/posts
+  body:
+    type: json
+    data: "{}"
   auth: inherit
 
 runtime:
