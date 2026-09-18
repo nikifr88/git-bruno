@@ -8,6 +8,6 @@ request:
   scripts:
     - type: after-response
       code: |-
-        test("Status code is 200", function() {
+        test("Status code is 300", function() {
             expect(res.getStatus()).to.equal(200);
           });
